@@ -1,0 +1,344 @@
+h1,
+p,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body .container {
+  width: 1140px;
+  margin: 0 auto;
+}
+body .settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  grid-column-gap: 50px;
+  /* Checked */
+  /* Hover */
+}
+body .settings .logo {
+  font-size: 15px;
+  text-align: center;
+}
+body .settings .logo h1 {
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+body .settings .logo:hover {
+  cursor: pointer;
+}
+body .settings .data {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body .settings .data label,
+body .settings .data input,
+body .settings .data select {
+  font-size: 18px;
+  border: 0;
+  border-radius: 15px;
+  padding: 5px;
+}
+body .settings .data li {
+  margin-bottom: 15px;
+}
+body .settings .data input,
+body .settings .data select {
+  background-color: #e3f2fd;
+}
+body .settings .form_radio_btn {
+  display: inline-block;
+  margin-right: 10px;
+}
+body .settings .form_radio_btn input[type=radio] {
+  display: none;
+}
+body .settings .form_radio_btn label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body .settings .form_radio_btn input[type=radio]:checked + label {
+  background: #e3f2fd;
+}
+body .settings .form_radio_btn label:hover {
+  font-weight: 500;
+}
+body header {
+  margin-bottom: 25px;
+}
+
+main {
+  padding-top: 35px;
+  height: 310px;
+  background-color: #42a5f5;
+}
+main .done {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 50px;
+}
+main .done .tooltip1 {
+  position: relative;
+  display: inline-block;
+}
+main .done .tooltip1 .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 104%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+main .done .tooltip1 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+main .done .tooltip1:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+main .go {
+  background-color: transparent;
+  background-image: url(../img/image\ 1.png);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border: 0;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+main .go:hover {
+  transform: scale(1.1);
+}
+main .feedback {
+  background-image: url(../img/Cloud.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100%;
+  width: 630px;
+  height: 250px;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+}
+main .feedback textarea {
+  margin-left: 90px;
+  font-size: 13px;
+  resize: none;
+  
+  border: 0;
+  width: 500px;
+  height: 180px;
+  margin-right: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+main .feedback textarea:focus,
+main .feedback input:focus {
+  outline: none;
+}
+main .feedback .copy {
+  background-image: url(../img/copy.png);
+  background-size: cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  width: 55px;
+  height: 65px;
+  align-self: center;
+  margin-top: 150px;
+  margin-right: 25px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  background-size: 100%;
+}
+main .feedback .copy:hover {
+  transform: scale(1.1);
+}
+main .feedback .tooltip {
+  position: relative;
+  display: inline-block;
+}
+main .feedback .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 40%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+main .feedback .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+main .feedback .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 960px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container {
+    width: 720px !important;
+  }
+  .feedback {
+    width: 510px !important;
+  }
+  textarea {
+    height: 150px !important;
+  }
+  .copy {
+    width: 35px !important;
+    height: 35px !important;
+    padding-right: 32px !important;
+    padding-bottom: 40px !important;
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 90px !important;
+    background-color: #555;
+    color: #fff;
+    font-size: 10px !important;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 40%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 540px !important;
+  }
+  .settings {
+    flex-direction: column !important;
+    text-align: center;
+    margin-top: 5px !important;
+  }
+  .logo img {
+    width: 50px;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-position: center !important;
+  }
+  .logo h1 {
+    font-size: 12px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .data label,
+  .data select,
+  .data input {
+    font-size: 8px !important;
+    padding: 2px !important;
+  }
+  .data li {
+    margin-bottom: 3px !important;
+  }
+  input[type=radio i] {
+    width: 10px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .form_radio_btn {
+    margin-right: 1px;
+  }
+  .done {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    grid-column-gap: 1px !important;
+    grid-row-gap: 1px !important;
+  }
+  .go {
+    width: 60px !important;
+    height: 60px !important;
+    background-size: cover;
+  }
+  .feedback {
+    width: 450px !important;
+  }
+  textarea {
+    height: 150px !important;
+    font-size: 12px !important;
+    width: 450px !important;
+  }
+  .copy {
+    margin-top: 0 !important;
+    margin-top: 100px !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    width: 100% !important;
+  }
+  .feedback {
+    width: 350px !important;
+    height: 150px !important;
+  }
+  textarea {
+    height: 100px !important;
+    font-size: 8px !important;
+    width: 350px !important;
+  }
+  .copy {
+    margin-top: 0 !important;
+    margin-top: 80px !important;
+  }
+  main {
+    height: 220px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
