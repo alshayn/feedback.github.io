@@ -515,7 +515,7 @@ function generateFeedback() {
         else if (lessonWork == 'good' && discipline == 'bad') {
             second = goodWbadDM;
         }
-        else if (lessonWork == 'bad' && discipline == 'bad') {
+        else if (lessonWork == 'very_bad' && discipline == 'bad') {
             second = midWbadDM;
         }
         else if (lessonWork == 'very_bad' && discipline == 'good') {
@@ -562,7 +562,7 @@ function generateFeedback() {
         else if (lessonWork == 'good' && discipline == 'bad') {
             second = goodWbadDF;
         }
-        else if (lessonWork == 'bad' && discipline == 'bad') {
+        else if (lessonWork == 'very_bad' && discipline == 'bad') {
             second = midWbadDF;
         }
         else if (lessonWork == 'very_bad' && discipline == 'good') {
