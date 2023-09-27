@@ -515,6 +515,9 @@ function generateFeedback() {
         else if (lessonWork == 'good' && discipline == 'bad') {
             second = goodWbadDM;
         }
+        else if (lessonWork == 'bad' && discipline == 'bad') {
+            second = badWbadDM;
+        }
         else if (lessonWork == 'very_bad' && discipline == 'bad') {
             second = midWbadDM;
         }
