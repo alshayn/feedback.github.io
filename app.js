@@ -350,7 +350,7 @@ function generateFeedback() {
     ]
 
     //  плохо работает, плохо с поведением М Ж
-    badWbadDM = [
+    let badWbadDM = [
         "Во время занятий выполняет не все задания, позволяет себе отвлекаться, от чего может прослушивать и не успевать. Чуть больше старании - и всё получится.",
         "На занятиях многое не выполняет, к тому же, позволяет себе отвлекаться, от чего может прослушивать и не успевать.",
         "На занятиях успевает сделать не все задания, также может отвлекаться на посторонние вещи и терять внимание",
@@ -503,25 +503,25 @@ function generateFeedback() {
         else if (scoreStudent == 'very_bad') {
             first = badM;
         }
+        // Норм работает норм поведение М
         if (lessonWork == 'good' && discipline == 'good') {
             second = goodWgoodDM;
         }
-        else if (lessonWork == 'bad' && discipline == 'good') {
-            second = midWgoodDM;
-        }
-        else if (lessonWork == 'very_bad' && discipline == 'good') {
-            second = badWgoodDM;
-        }
+        //  норм работает, плохо с поведением М
         else if (lessonWork == 'good' && discipline == 'bad') {
             second = goodWbadDM;
         }
-        else if (lessonWork == 'bad' && discipline == 'bad') {
-            second = badWbadDM;
+        // средне работает норм поведение М
+        else if (lessonWork == 'middle' && discipline == 'good') {
+            second = midWgoodDM;
         }
-        else if (lessonWork == 'very_bad' && discipline == 'bad') {
+        else if (lessonWork == 'middle' && discipline == 'bad') {
             second = midWbadDM;
         }
-        else if (lessonWork == 'very_bad' && discipline == 'good') {
+        else if (lessonWork == 'bad' && discipline == 'good') {
+            second = badWgoodDM;
+        }       
+        else if (lessonWork == 'bad' && discipline == 'bad') {
             second = badWbadDM;
         }
         if (homework == 'all') {
