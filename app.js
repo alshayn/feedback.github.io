@@ -28,18 +28,18 @@ function outFunc() {
 }
 
 // Музыка 
-function playMusic() {
-    document.getElementsByClassName("logo").onclick
-    var myaudio = document.getElementById("myaudio");
-    if (myaudio.paused == true) {
-        document.getElementById("myaudio").play();
-        myaudio.volume = 0.7
+// function playMusic() {
+//     document.getElementsByClassName("logo").onclick
+//     var myaudio = document.getElementById("myaudio");
+//     if (myaudio.paused == true) {
+//         document.getElementById("myaudio").play();
+//         myaudio.volume = 0.7
 
-    }
-    else if (myaudio.paused == false) {
-        document.getElementById("myaudio").pause();
-    }
-}
+//     }
+//     else if (myaudio.paused == false) {
+//         document.getElementById("myaudio").pause();
+//     }
+// }
 
 // Генерация отзыва
 function generateFeedback() {
