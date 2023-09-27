@@ -556,19 +556,20 @@ function generateFeedback() {
         if (lessonWork == 'good' && discipline == 'good') {
             second = goodWgoodDF;
         }
-        else if (lessonWork == 'bad' && discipline == 'good') {
-            second = midWgoodDF;
-        }
-        else if (lessonWork == 'very_bad' && discipline == 'good') {
-            second = badWgoodDF;
-        }
         else if (lessonWork == 'good' && discipline == 'bad') {
             second = goodWbadDF;
         }
-        else if (lessonWork == 'very_bad' && discipline == 'bad') {
+        else if (lessonWork == 'middle' && discipline == 'good') {
+            second = midWgoodDF;
+        }
+        else if (lessonWork == 'middle' && discipline == 'bad') {
             second = midWbadDF;
         }
-        else if (lessonWork == 'very_bad' && discipline == 'good') {
+        else if (lessonWork == 'bad' && discipline == 'good') {
+            second = badWgoodDF;
+        }
+        
+        else if (lessonWork == 'bad' && discipline == 'bad') {
             second = badWbadDM;
         }
         if (homework == 'all') {
