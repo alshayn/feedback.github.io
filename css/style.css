@@ -422,7 +422,9 @@ main .feedback .tooltip:hover .tooltiptext {
   .copy {
     margin-top: 0 !important;
     margin-top: 40px !important;
-    width: 10px !important;
+    /* width: 20px !important;
+    height: 20px !important; */
+    padding-right: 15px !important;
   }
   .tooltip .tooltiptext {
     bottom: 50% !important;
