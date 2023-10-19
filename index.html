@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,9 @@
     <header>
         <div class="container">
             <div class="settings">
-                <div class="logo" onclick="playMusic()">
+                <!-- <div class="logo" onclick="playMusic()"> -->
+                <div class="logo">
+                    <div class="logo" onclick="playMusic()"></div>
                     <img src="img/logo.svg" alt="logo" width="100">
                     <h1>Генератор<br> Отзывов</h1>
                     <audio src="1.mp3" id="myaudio">
@@ -88,6 +90,7 @@
                                 <option value="half">Половина</option>
                                 <option value="almost_not">Почти нет</option>
                                 <option value="no_one">Ни одного</option>
+                                <option value="not_considered">Не учитывается</option>
                             </select>
                         </form>
                     </li>
@@ -100,19 +103,22 @@
         <div class="container">
             <div class="done">
                 <div class="tooltip1">
-                    <button class="go" onclick="generateFeedback()" onclick="myFunction()" onmouseout="outFunc1()"></button>
+                    <button class="go" onclick="generateFeedback()" onclick="myFunction()"
+                        onmouseout="outFunc1()"></button>
                     <span class="tooltiptext" id="myTooltip1">Нажми чтобы сгенерировать</span>
                 </div>
-            
-            <div class="feedback">
-                <textarea name="feed" id="feedbackText" cols="55" rows="8" placeholder="Выбери все необходимые пункты, и программа сгенерирует тебе отзыв. Для запуска нажми на иконку рупора."></textarea>
-                <div class="tooltip">
-                <button class="copy" onclick="copyFunction()" onclick="myFunction()" onmouseout="outFunc()"></button>
-                <span class="tooltiptext" id="myTooltip">Нажми чтобы скопировать</span>
-            </div>
+
+                <div class="feedback">
+                    <textarea name="feed" id="feedbackText" cols="55" rows="8"
+                        placeholder="Выбери все необходимые пункты, и программа сгенерирует тебе отзыв. Для запуска нажми на иконку рупора."></textarea>
+                    <div class="tooltip">
+                        <button class="copy" onclick="copyFunction()" onclick="myFunction()"
+                            onmouseout="outFunc()"></button>
+                        <span class="tooltiptext" id="myTooltip">Нажми чтобы скопировать</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     </main>
     <script src="app.js"></script>
 </body>

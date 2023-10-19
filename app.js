@@ -28,18 +28,18 @@ function outFunc() {
 }
 
 // Музыка 
-function playMusic() {
-    document.getElementsByClassName("logo").onclick
-    var myaudio = document.getElementById("myaudio");
-    if (myaudio.paused == true) {
-        document.getElementById("myaudio").play();
-        myaudio.volume = 0.7
+// function playMusic() {
+//     document.getElementsByClassName("logo").onclick
+//     var myaudio = document.getElementById("myaudio");
+//     if (myaudio.paused == true) {
+//         document.getElementById("myaudio").play();
+//         myaudio.volume = 0.7
 
-    }
-    else if (myaudio.paused == false) {
-        document.getElementById("myaudio").pause();
-    }
-}
+//     }
+//     else if (myaudio.paused == false) {
+//         document.getElementById("myaudio").pause();
+//     }
+// }
 
 // Генерация отзыва
 function generateFeedback() {
@@ -476,6 +476,7 @@ function generateFeedback() {
         "То, что " + nameStudent + " не выполняет домашние задания, вызывает беспокойство. Постоянное невыполнение заданий может привести к пробелам в знаниях и понимании материала, которые будет трудно восполнить в будущем."
 
     ]
+    let not_c=["",""]
 
     // м оценка отлично, работа хорошо, дисциплина хорошо, дз все
     // if (sex == 'male' && scoreStudent == 'great' && lessonWork == 'good' & discipline == 'good' & homework == 'all') {
@@ -539,6 +540,9 @@ function generateFeedback() {
         else if (homework == 'no_one') {
             third = noHW;
         }
+        else if (homework=='not_considered') {
+            third = not_c;
+        }
     }
     else if (sex == 'female') {
         if (scoreStudent == 'great') {
@@ -568,7 +572,6 @@ function generateFeedback() {
         else if (lessonWork == 'bad' && discipline == 'good') {
             second = badWgoodDF;
         }
-        
         else if (lessonWork == 'bad' && discipline == 'bad') {
             second = badWbadDM;
         }
@@ -586,6 +589,9 @@ function generateFeedback() {
         }
         else if (homework == 'no_one') {
             third = noHW;
+        }
+        else if (homework=='not_considered') {
+            third = not_c;
         }
     }
     function getRandomFeedback() {
