@@ -421,7 +421,7 @@ main .feedback .tooltip:hover .tooltiptext {
   }
   .copy {
     margin-top: 0 !important;
-    margin-top: 50px !important;
+    margin-top: 40px !important;
     width: 10px !important;
   }
   .tooltip .tooltiptext {
